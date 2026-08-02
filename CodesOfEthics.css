@@ -154,3 +154,27 @@ footer {
     margin: 0 auto;
     font-weight: 500;
 }
+
+
+
+@keyframes brilloExito {
+    0% {
+        box-shadow: 0 0 5px rgba(244, 114, 182, 0.4), 0 0 10px rgba(139, 92, 246, 0.4);
+        transform: translateY(-3px) scale(1.02);
+    }
+    50% {
+        box-shadow: 0 0 25px rgba(244, 114, 182, 0.9), 0 0 40px rgba(139, 92, 246, 0.8);
+        transform: translateY(-5px) scale(1.05);
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(139, 92, 246, 0.3);
+        transform: translateY(0) scale(1);
+    }
+}
+
+.interactive-btn.btn-exito {
+    background: linear-gradient(135deg, #7c3aed 0%, #db2777 100%);
+    animation: brilloExito 0.8s ease-in-out;
+    cursor: not-allowed;
+    opacity: 0.9;
+}
